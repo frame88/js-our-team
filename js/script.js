@@ -77,21 +77,24 @@ button.addEventListener('click', function() {
         </div >
 
 */
+const container = document.querySelector('.team-container');
 
-for (let i = 0; i < team.length; i++) {
+for (let i = 1; i < team.length; i++) {
   const member = team[i];
-  const template = < div class="team-card" >
+  const template = `
+  < div class="team-card" >
     <div class="card-image">
       <img
         src="img/${member.image}"
-        alt="${member.nome}"
+        alt="${member.name}"
       />
     </div>
     <div class="card-text">
-      <h3>${member.nome}</h3>
+      <h3>${member.name}</h3>
       <p>${member.role}</p>
     </div>
   </div >
+  `;
 }
 
 
