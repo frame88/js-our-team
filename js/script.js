@@ -82,7 +82,7 @@ const container = document.querySelector('.team-container');
 for (let i = 1; i < team.length; i++) {
   const member = team[i];
   const template = `
-  < div class="team-card" >
+  <div class="team-card">
     <div class="card-image">
       <img
         src="img/${member.image}"
@@ -95,8 +95,8 @@ for (let i = 1; i < team.length; i++) {
     </div>
   </div >
   `;
-
   container.innerHtml += template;
+  console.log(template);
 }
 
 
