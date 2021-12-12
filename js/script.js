@@ -95,6 +95,8 @@ for (let i = 1; i < team.length; i++) {
     </div>
   </div >
   `;
+
+  container.innerHtml += template;
 }
 
 
